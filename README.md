@@ -134,11 +134,20 @@ Let's do a table again:
 |Expession|Action|Notes|
 |---------|------|-----|
 |`x = 2 * (y = 3 * 2)`| Evaluate innermost expression in `()`| PEMDAS rules|
-|`y = 3 * 2`|Evaluate expression `3 * 2` and assign to y||
+|`y = 3 * 2`|Zoom in to evaluate expression `3 * 2` and assign to y||
 |`y = 6`| Assignment expression taking a constant expression to assign| y now points to `6`|
-|6|Return value of `(y = 3 * 2)`||
+|6|Return value of `y = 6`|Remember: Assignment expressions have a return value; insert in outer expression|
 |x = 2 * 6 |Evaluate expression|PEMDAS rules|
 |x = 12| A bare word and a constant| `x` now points to `12` |
+
+That first line is a little bit tricky. You might be thinking "Hey, that's not
+math!" You're right. This is evaluating expressions in Ruby, so things are a
+bit more interesting.
+
+> **FURTHER GROWTH**: When you learn the _variable lookup expression_ in two
+> lessons, come back to this lesson and use the _variable lookup expression_ to
+> see what's inside `x` and `y` after Ruby evaluates the expression:
+`x = 2 * (y = 3 * 2)`.
 
 ## Conclusion
 
