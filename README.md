@@ -50,7 +50,7 @@ like `1 + 1`, nor are they words that are special to Ruby. They're words that
 ***we*** introduce. For Ruby, `height_in_centimeters` is a bare word. For a
 human baby, `Ma-Ma` is a bare word.
 
-These bare-word names are made to "point" to the RHS. This operator is known as
+These bare word names are made to "point" to the RHS. This operator is known as
 the _assignment operator_. The _assignment operator_ should not be confused
 with `=` which we know from daily life and arithmetic which means "is equal
 to."
@@ -63,7 +63,7 @@ The RHS should be an _expression_, even if it's our friend the lowly _constant
 expression_. To associate this to learning to speak:
 
 ```text
-Ma-ma = <this person in front of me>
+ma-ma = <this person in front of me>
 ```
 
 That's the basics of the assignment expression!
@@ -108,6 +108,7 @@ warning: already initialized constant SPEED_OF_LIGHT
 Actually, our "baby" example is probably:
 
 ```ruby
+# MA_MA is probably a constant, that doesn't change during a lifetime
 MA_MA = <the lady that gave me life who is gesturing in front of me>
 ```
 
@@ -143,8 +144,8 @@ Let's do a table again:
 
 Think about a baby, sitting back. Before it stands a parent saying their name
 over and over (...and over) again. They wave towards their body and say their
-name again and again. What The parent is trying to do is teach the baby to
-assign to the bare word "Mama" or "Papa" or "Dada" _their face_.
+name again and again. What the parent is trying to do is teach the baby to
+assign to the bare word "Mama" or "Papa" or "Dada" _to their face_.
 
 While neither the baby or the (average) adult is aware of it, they're trying to
 teach the baby the second of the _three essential expessions_: the assignment
