@@ -10,7 +10,7 @@
 ## Introduction
 
 So you've seen the first of our **essential three expressions**, the _constant
-expression_ which gives Ruby some constant fact about the world: `2` is `2`.
+expression_ which gives Python some constant fact about the world: `2` is `2`.
 
 It's really useful (we'll see why in a minute) to associate an _expression's_
 _evaluated_ result (or, _return value_)  with a 'name'. We call those names
@@ -27,9 +27,9 @@ Let's dig into this amazing mystery of existence.
 
 ## Define the _Assignment Expression_
 
-In Ruby, the assignment expression is represented as the following:
+In Python, the assignment expression is represented as the following:
 
-```ruby
+```Python
 lhs = rhs
 ```
 
@@ -39,15 +39,15 @@ the _assignment operator_; and then an expression or a constant, which we call
 
 Here's an example:
 
-```ruby
+```Python
 height_in_centimeters = 180
 ```
 
 The left-hand side is a name. Often, programmers call it the "variable name."
 The "LHS" **can never** be an expression. It is called a "bare word." Bare
 words (also: "barewords") are not data like `180`, nor are they expressions
-like `1 + 1`, nor are they words that are special to Ruby. They're words that
-***we*** introduce. For Ruby, `height_in_centimeters` is a bare word. For a
+like `1 + 1`, nor are they words that are special to Python. They're words that
+***we*** introduce. For Python, `height_in_centimeters` is a bare word. For a
 human baby, `Ma-Ma` is a bare word.
 
 These bare word names are made to "point" to the RHS. This operator is known as
@@ -75,41 +75,37 @@ to it.
 
 Many years ago I was:
 
-```ruby
+```Python
 height_in_centimeters = 50
 ```
 
 But today I am:
 
-```ruby
+```Python
 height_in_centimeters = 180
 ```
 
-We can try these out in IRB:
+We can try these out in the Python interpreter:
 
 (animation)
 
-Sometimes, we might want to make a variable name permanent, it can only be
-assigned ONCE. We do this by writing a "symbolic constant." In Ruby, symbolic
-constants are written in all caps:
+In some programming languages, we might want to make a variable name permanent;
+that is, we only want it to be assigned ONCE. In Python, **all variables are
+mutable**. There is no way to prevent a variable from being changed without
+some additional, complicated code.
 
-```ruby
+Now, we _can_ imply that a variable should not be changed. One way we do this is
+by writing the variable name in all caps:
+
+```Python
 SPEED_OF_LIGHT = 180000
 ```
 
-If, after this you try to set `SPEED_OF_LIGHT` to something else, Ruby will
-complain.
+If, after this you try to set `SPEED_OF_LIGHT` to something else, it will
+still change:
 
-```ruby
-SPEED_OF_LIGHT = 1800000
-warning: already initialized constant SPEED_OF_LIGHT
-```
-
-Actually, our "baby" example is probably:
-
-```ruby
-# MA_MA is probably a constant, that doesn't change during a lifetime
-MA_MA = <the lady that gave me life who is gesturing in front of me>
+```Python
+SPEED_OF_LIGHT = 0
 ```
 
 ## Constant versus "Symbolic Constants" and "Values"
@@ -141,12 +137,12 @@ Let's do a table again:
 |x = 12| A bare word and a constant| `x` now points to `12` |
 
 That first line is a little bit tricky. You might be thinking "Hey, that's not
-math!" You're right. This is evaluating expressions in Ruby, so things are a
+math!" You're right. This is evaluating expressions in Python, so things are a
 bit more interesting.
 
 > **FURTHER GROWTH**: When you learn the _variable lookup expression_ in two
 > lessons, come back to this lesson and use the _variable lookup expression_ to
-> see what's inside `x` and `y` after Ruby evaluates the expression:
+> see what's inside `x` and `y` after Python evaluates the expression:
 `x = 2 * (y = 3 * 2)`.
 
 ## Conclusion
@@ -160,10 +156,10 @@ While neither the baby or the (average) adult is aware of it, they're trying to
 teach the baby the second of the _three essential expessions_: the assignment
 expression.
 
-With Ruby, it's much easier. We simply type a bare word, an `=` and an
+With Python, it's much easier. We simply type a bare word, an `=` and an
 expression.
 
-Since we now now how to get a constant for the purpose of assigning (_constant
+Since we now how to get a constant for the purpose of assigning (_constant
 expression_) and we know how to assign it (_assignment expression_) we have
 only one more vital expression to learn of the _essential three_: the variable
 lookup expression!
